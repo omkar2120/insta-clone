@@ -54,10 +54,10 @@ export const PostHeader = ( {post} ) => (
           
         }}
     >
-     <View style={{flexDirection:'row', alignItems:'center'}}>
+     <View style={{flexDirection:'row', alignItems:'center'}}  >   
          <Image source={{ uri: post.profile_picture}} style={styles.story}/>
          <Text style={{color:'white',marginLeft:5,fontWeight:'700' }}>
-         {post.user}</Text>
+         {post.user}</Text> 
      </View>
  
     <Text style={{color:'white', fontWeight:'900'}}>...</Text>
@@ -71,7 +71,7 @@ export const PostHeader = ( {post} ) => (
             height:450, 
         }}>
       <Image 
-        source={{uri: post.imageurl}} 
+        source={{uri:post.imageurl}} 
           style={{
              height:'100%',
              resizeMode:'cover'}}
@@ -85,7 +85,7 @@ export const PostHeader = ( {post} ) => (
      <View style={{flexDirection:'row'}}>
        <View style={styles.leftFooterIcon}>
           <Icons imgstyle={styles.footerIcon} imgUrl={PostFooterIcon[0].imageUrl} />
-          <Icons imgstyle={styles.footerIcon} imgUrl={PostFooterIcon[1].imageUrl} />
+          <Icons imgstyle={styles.footerIcon} imgUrl={PostFooterIcon[1].imageUrl} /> 
           <Icons imgstyle={styles.footerIcon} imgUrl={PostFooterIcon[2].imageUrl} />
         </View>
 

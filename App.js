@@ -4,6 +4,6 @@ import { View } from 'react-native'
 import {SignedInStack,SignedOutStack} from './navigation'
 
 export default function App() {
-  // return (<SignedOutStack/>)
+  // return (<SignedInStack/>)
   return(<AuthNavigation/>)
 }

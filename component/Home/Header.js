@@ -8,6 +8,7 @@ const handleSignout = async () => {
    try {
        await firebase.auth().signOut()
        console.log('Signed Out succefully')
+       alert('SignOut succesfully')
    } catch (error) {
        console.log(error)
    }

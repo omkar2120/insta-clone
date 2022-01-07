@@ -28,7 +28,9 @@ const SignUpForm = ({navigation}) => {
            alert('Firebase user created succesfully go back and login')
            console.log('Firebase user created successfully')
 
-            db.collection('users').add({
+            db.collection('users')
+            .doc(authuser.user.email)  //this is a self  generated email id its worked on user login and posts 
+            .set({
                 owner_uid: authuser.user.uid,
                 username:username,
                 email: authuser.user.email,
